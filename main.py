@@ -21,10 +21,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
-PREFIX = "!"
 
 if not TOKEN:
-    print("❌ TOKEN não encontrado no arquivo .env!")
+    print("❌ TOKEN não encontrado!")
+    print("📝 Configure a variável TOKEN nas configurações do Railway")
     exit(1)
 
 # URLs
